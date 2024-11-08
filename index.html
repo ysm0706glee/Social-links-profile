@@ -1,34 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Social links profile</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Social links profile</title>
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        margin: 0;
+        color: hsl(0, 0%, 100%);
+      }
 
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      main {
+        background-color: hsl(0, 0%, 8%);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      article {
+        background-color: hsl(0, 0%, 12%);
+        width: 320px;
+        padding: 32px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+
+        img {
+          border-radius: 50%;
+        }
+
+        .place {
+          color: hsl(75, 94%, 57%);
+        }
+
+        .link-container {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          width: 100%;
+        }
+
+        .link {
+          background-color: hsl(0, 0%, 20%);
+          color: white;
+          font-size: 14px;
+          padding: 8px;
+          border-radius: 4px;
+          text-align: center;
+          text-decoration: none;
+          width: 100%;
+          box-sizing: border-box;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+        <img
+          src="assets/images/avatar-jessica.jpeg"
+          alt="avatar jessica"
+          width="100"
+          height="100"
+        />
+        <h1>Jessica Randall</h1>
+        <span class="place">London, United Kingdom</span>
+        <p>"Front-end developer and avid reader."</p>
+        <div class="link-container">
+          <a class="link" href="/">Github</a>
+          <a class="link" href="/">Frontend Mentor</a>
+          <a class="link" href="/">Linkedin</a>
+          <a class="link" href="/">Twitter</a>
+          <a class="link" href="/">Instagram</a>
+        </div>
+      </article>
+    </main>
+  </body>
 </html>
